@@ -8,3 +8,8 @@ exports.usernameCreateGet = (req, res) => {
     title: "Create Username",
   });
 };
+
+exports.usernameCreatePost = (req, res) => {
+  console.log("username to be saved: ", req.body.userName);
+  res.send("username posted");
+};
